@@ -1,0 +1,15 @@
+resources:
+  - name: source-code
+    type: git
+    source:
+      uri: https://github.com/GauravEmani/Concourse_Tutorial.git
+      branch: master
+
+jobs:
+  - name: package
+    plan:
+    - get: source-code
+    - task: package
+      privileged: true
+      file: "source-code/gitclonerepo/tasks/clonerepo.yml"
+    

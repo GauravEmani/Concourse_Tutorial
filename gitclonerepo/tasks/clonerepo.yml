@@ -12,4 +12,4 @@ outputs:
   - name: new-repo
 
 run:
-  path: clonerepo.sh
+  path: source-code/gitclonerepo/tasks/clonerepo.sh
